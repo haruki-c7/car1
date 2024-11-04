@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "ipx": "^3.0.1",
+    "sass": "1.77.6",
+    "usebootstrap": "^3.5.100",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.6.0",
+    "nuxt": "^3.13.0"
+  },
+  "volta": {
+    "node": "20.17.0"
+  }
+}
