@@ -65,7 +65,7 @@ export default {
           weight: 1590,
           topSpeed: 400,
           update: "0-400-0の記録更新",
-          image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Koenigsegg_Regera_Genf_2018.jpg"
+          image: "/assets/img/regera.jpg"
         },
         {
           name: "Koenigsegg Jesko Absolut",
@@ -75,7 +75,7 @@ export default {
           weight: 1320,
           topSpeed: 500,
           update: "理論上最高速の更新",
-          image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Koenigsegg_Jesko_Geneva_2019.jpg"
+          image: "/assets/img/jesko-absolut.jpeg"
         },
         {
           name: "Rimac Nevera",
@@ -85,7 +85,7 @@ export default {
           weight: 2150,
           topSpeed: 412,
           update: "電気自動車の新記録",
-          image: "https://upload.wikimedia.org/wikipedia/commons/7/71/Rimac_C_Two_Genf_2018.jpg"
+          image: "/assets/img/Rimac_Nevera.jpg"
         },
         {
           name: "Rolls-Royce Boat Tail",
@@ -95,7 +95,7 @@ export default {
           weight: 3000,
           topSpeed: 250,
           update: "世界で最も高額な車（$28M）",
-          image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rolls-Royce_Boat_Tail_%28cropped%29.jpg"
+          image: "/assets/img/boattail.png"
         },
         {
           name: "LaFerrari",
@@ -105,7 +105,7 @@ export default {
           weight: 1585,
           topSpeed: 350,
           update: "歴史的な三台の一つ",
-          image: require("@/assets/laferrari.jpg")
+          image: "/assets/img/laferrari.jpg"
         },
         {
           name: "Porsche 918 Spyder",
