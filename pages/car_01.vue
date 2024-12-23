@@ -1,3 +1,5 @@
+
+あなた:
 <template>
   <div class="container mt-5">
     <h1 class="text-center">車の歴史</h1>
@@ -35,7 +37,7 @@ export default {
           weight: 265,
           topSpeed: 16,
           update: "世界初の自動車",
-          image: "https://upload.wikipedia.org/wikipedia/commons/3/3e/Benz_Patent_Motorwagen_1886_%28cropped%29.jpg"
+          image: "/img/patent.jpg"
         },
         {
           name: "Bugatti Veyron Super Sport",
@@ -44,8 +46,8 @@ export default {
           torque: 1500,
           weight: 1888,
           topSpeed: 431,
-          update: "時代の最高速度記録",
-          image: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bugatti_Veyron_16.4_Super_Sport.jpg"
+          update: "史上初の最高速度 - 時速400km到達",
+          image: "/img/veyron.jpg"
         },
         {
           name: "Tesla Model S Plaid",
@@ -54,8 +56,8 @@ export default {
           torque: 1420,
           weight: 2162,
           topSpeed: 322,
-          update: "0-100 km/h加速の記録更新",
-          image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Tesla_Model_S_Plaid.jpg"
+          update: "0-100 km/h 1.99秒 - 加速の記録更新",
+          image: "/img/modelS-plaid.jpg"
         },
         {
           name: "Koenigsegg Regera",
@@ -64,8 +66,8 @@ export default {
           torque: 2000,
           weight: 1590,
           topSpeed: 400,
-          update: "0-400-0の記録更新",
-          image: "/assets/img/regera.jpg"
+          update: "0-400-0の記録更新 - 31.49秒",
+          image: "/img/regera.jpg"
         },
         {
           name: "Koenigsegg Jesko Absolut",
@@ -74,8 +76,8 @@ export default {
           torque: 1500,
           weight: 1320,
           topSpeed: 500,
-          update: "理論上最高速の更新",
-          image: "/assets/img/jesko-absolut.jpeg"
+          update: "理論上世界最高速",
+          image: "/img/jesko-absolut.webp"
         },
         {
           name: "Rimac Nevera",
@@ -84,8 +86,8 @@ export default {
           torque: 2360,
           weight: 2150,
           topSpeed: 412,
-          update: "電気自動車の新記録",
-          image: "/assets/img/Rimac_Nevera.jpg"
+          update: "0-300 km/h 9.3秒 - 電気自動車の新記録 ",
+          image: "/img/Rimac_Nevera.jpg"
         },
         {
           name: "Rolls-Royce Boat Tail",
@@ -94,18 +96,18 @@ export default {
           torque: 900,
           weight: 3000,
           topSpeed: 250,
-          update: "世界で最も高額な車（$28M）",
-          image: "/assets/img/boattail.png"
+          update: "世界で最も高額な車 40億6000万円",
+          image: "/img/boattail.png"
         },
         {
-          name: "LaFerrari",
+          name: "ferrari LaFerrari",
           horsepower: 963,
           engine: "V12 6.3L ハイブリッド",
           torque: 900,
           weight: 1585,
           topSpeed: 350,
           update: "歴史的な三台の一つ",
-          image: "/assets/img/laferrari.jpg"
+          image: "/img/laferrari.jpg"
         },
         {
           name: "Porsche 918 Spyder",
@@ -115,7 +117,7 @@ export default {
           weight: 1675,
           topSpeed: 345,
           update: "歴史的な三台の一つ",
-          image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Porsche_918_Spyder_Genf_2014.jpg"
+          image: "/img/918.jpg"
         },
         {
           name: "McLaren P1",
@@ -125,7 +127,7 @@ export default {
           weight: 1547,
           topSpeed: 350,
           update: "歴史的な三台の一つ",
-          image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/McLaren_P1_Geneva_2013.jpg"
+          image: "/img/p1.jpg"
         }
       ],
     };
@@ -134,25 +136,4 @@ export default {
 </script>
 
 <style>
-@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-}
-
-h1 {
-  margin: 20px 0;
-}
-
-.card {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.img-fluid {
-  max-height: 200px;
-  object-fit: cover;
-}
 </style>
