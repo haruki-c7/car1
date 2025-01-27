@@ -6,7 +6,7 @@
     <div v-for="car in cars" :key="car.name" class="card mb-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <img :src="car.image" class="img-fluid rounded-start" alt="車の画像">
+          <img :src="car.image" class="img-fluid rounded-start" alt="車の画像" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -21,6 +21,8 @@
         </div>
       </div>
     </div>
+    <!-- 別ページへのリンク -->
+    <a href="car_02.vue" class="btn btn-primary mt-3">歴史的な三台を見る</a>
   </div>
 </template>
 
@@ -128,6 +130,16 @@ export default {
           topSpeed: 350,
           update: "歴史的な三台の一つ",
           image: "/img/p1.jpg"
+        },
+        {
+          name: "Ferrari F80",
+          horsepower: '900+300',
+          engine: "V6 3.0L,３つのモーター",
+          torque: 850,
+          weight: 1525,
+          topSpeed: 350,
+          update: "量産車で最高額 - 6億円 ",
+          image: "/img/F80.jpg"
         }
       ],
     };
