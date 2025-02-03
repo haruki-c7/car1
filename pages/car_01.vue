@@ -19,131 +19,92 @@
         </div>
       </div>
     </div>
-    <!-- 別ページへのリンク -->
-    <a href="car_02.vue" class="btn btn-primary mt-3">歴史的な三台を見る</a>
+    <a href="https://car1-iilz--53223--d20a0a75.local-credentialless.webcontainer.io/car_02" class="btn btn-primary mt-3">歴史的な三台を見る</a>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      cars: [
-        {
-          name: "Benz Patent-Motorwagen",
-          horsepower: 0.75,
-          engine: "単気筒",
-          torque: 10,
-          weight: 265,
-          topSpeed: 16,
-          update: "世界初の自動車",
-          image: "/img/patent.jpg"
-        },
-        {
-          name: "Bugatti Veyron Super Sport",
-          horsepower: 1200,
-          engine: "W16 8.0L",
-          torque: 1500,
-          weight: 1888,
-          topSpeed: 431,
-          update: "史上初の最高速度 - 時速400km到達",
-          image: "/img/veyron.jpg"
-        },
-        {
-          name: "Tesla Model S Plaid",
-          horsepower: 1020,
-          engine: "3モーター電気",
-          torque: 1420,
-          weight: 2162,
-          topSpeed: 322,
-          update: "0-100 km/h 1.99秒 - 加速の記録更新",
-          image: "/img/modelS-plaid.jpg"
-        },
-        {
-          name: "Koenigsegg Regera",
-          horsepower: 1500,
-          engine: "V8 5.0L ハイブリッド",
-          torque: 2000,
-          weight: 1590,
-          topSpeed: 400,
-          update: "0-400-0の記録更新 - 31.49秒",
-          image: "/img/regera.jpg"
-        },
-        {
-          name: "Koenigsegg Jesko Absolut",
-          horsepower: 1600,
-          engine: "V8 5.0L",
-          torque: 1500,
-          weight: 1320,
-          topSpeed: 500,
-          update: "理論上世界最高速",
-          image: "/img/jesko-absolut.webp"
-        },
-        {
-          name: "Rimac Nevera",
-          horsepower: 1914,
-          engine: "4モーター電気",
-          torque: 2360,
-          weight: 2150,
-          topSpeed: 412,
-          update: "0-300 km/h 9.3秒 - 電気自動車の新記録 ",
-          image: "/img/Rimac_Nevera.jpg"
-        },
-        {
-          name: "Rolls-Royce Boat Tail",
-          horsepower: 563,
-          engine: "V12 6.75L",
-          torque: 900,
-          weight: 3000,
-          topSpeed: 250,
-          update: "世界で最も高額な車 40億6000万円",
-          image: "/img/boattail.png"
-        },
-        {
-          name: "ferrari LaFerrari",
-          horsepower: 963,
-          engine: "V12 6.3L ハイブリッド",
-          torque: 900,
-          weight: 1585,
-          topSpeed: 350,
-          update: "歴史的な三台の一つ",
-          image: "/img/laferrari.jpg"
-        },
-        {
-          name: "Porsche 918 Spyder",
-          horsepower: 887,
-          engine: "V8 4.6L ハイブリッド",
-          torque: 1280,
-          weight: 1675,
-          topSpeed: 345,
-          update: "歴史的な三台の一つ",
-          image: "/img/918.jpg"
-        },
-        {
-          name: "McLaren P1",
-          horsepower: 916,
-          engine: "V8 3.8L ハイブリッド",
-          torque: 900,
-          weight: 1547,
-          topSpeed: 350,
-          update: "歴史的な三台の一つ",
-          image: "/img/p1.jpg"
-        },
-        {
-          name: "Ferrari F80",
-          horsepower: '900+300',
-          engine: "V6 3.0L,３つのモーター",
-          torque: 850,
-          weight: 1525,
-          topSpeed: 350,
-          update: "量産車で最高額 - 6億円 ",
-          image: "/img/F80.jpg"
-        }
-      ],
-    };
+<script setup>
+import { ref } from 'vue';
+const cars = ref([
+  {
+    name: "Benz Patent-Motorwagen",
+    horsepower: 0.75,
+    engine: "単気筒",
+    torque: 10,
+    weight: 265,
+    topSpeed: 16,
+    update: "世界初の自動車",
+    image: "/img/patent.jpg"
   },
-};
+  {
+    name: "Bugatti Veyron Super Sport",
+    horsepower: 1200,
+    engine: "W16 8.0L",
+    torque: 1500,
+    weight: 1888,
+    topSpeed: 431,
+    update: "史上初の最高速度 - 時速400km到達",
+    image: "/img/veyron.jpg"
+  },
+  {
+    name: "Tesla Model S Plaid",
+    horsepower: 1020,
+    engine: "3モーター電気",
+    torque: 1420,
+    weight: 2162,
+    topSpeed: 322,
+    update: "0-100 km/h 1.99秒 - 加速の記録更新",
+    image: "/img/modelS-plaid.jpg"
+  },
+  {
+    name: "Koenigsegg Regera",
+    horsepower: 1500,
+    engine: "V8 5.0L ハイブリッド",
+    torque: 2000,
+    weight: 1590,
+    topSpeed: 400,
+    update: "0-400-0の記録更新 - 31.49秒",
+    image: "/img/regera.jpg"
+  },
+  {
+    name: "Koenigsegg Jesko Absolut",
+    horsepower: 1600,
+    engine: "V8 5.0L",
+    torque: 1500,
+    weight: 1320,
+    topSpeed: 500,
+    update: "理論上世界最高速",
+    image: "/img/jesko-absolut.webp"
+  },
+  {
+    name: "Rimac Nevera",
+    horsepower: 1914,
+    engine: "4モーター電気",
+    torque: 2360,
+    weight: 2150,
+    topSpeed: 412,
+    update: "0-300 km/h 9.3秒 - 電気自動車の新記録 ",
+    image: "/img/Rimac_Nevera.jpg"
+  },
+  {
+    name: "Rolls-Royce Boat Tail",
+    horsepower: 563,
+    engine: "V12 6.75L",
+    torque: 900,
+    weight: 3000,
+    topSpeed: 250,
+    update: "世界で最も高額な車 40億6000万円",
+    image: "/img/boattail.png"
+  },
+  {
+    name: "Ferrari F80",
+    horsepower: "900+300",
+    engine: "V6 3.0L,３つのモーター",
+    torque: 850,
+    weight: 1525,
+    topSpeed: 350,
+    update: "量産車で最高額 - 6億円 ",
+    image: "/img/F80.jpg"
+  }
+]);
 </script>
-
-<style>
-</style>
